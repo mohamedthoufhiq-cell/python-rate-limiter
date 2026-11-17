@@ -1,0 +1,23 @@
+{
+  "version": 1,
+  "questions": [
+    {
+      "id": "q1",
+      "title": "Q1",
+      "prompt": {
+        "en": "Rate-limit checks and statistics reads can interleave. Explain what in your implementation makes each decision and its counter updates atomic, so that every (client, endpoint) state and the aggregate statistics stay consistent; what this approach costs as traffic grows and how you would reduce that cost; and what would change if several server processes on the same machine enforced the same limits.",
+        "zh-cn": "限流检查与统计读取可能交错执行。说明在你的实现中，是什么让每次决策及其计数更新成为原子操作，从而使每个 (client, endpoint) 的状态和聚合统计保持一致；随着流量增长，这种做法的代价是什么，你会如何降低它；如果同一台机器上的多个服务器进程执行同一组限额，又会有什么变化。"
+      },
+      "answer": ""
+    },
+    {
+      "id": "q2",
+      "title": "Q2",
+      "prompt": {
+        "en": "Explain how this architectural design would need to evolve for a multi-instance, horizontally scaled deployment (e.g., migrating from in-memory state to a distributed cache like Redis or Memcached).",
+        "zh-cn": "说明在多实例、水平扩展部署中，这种架构设计需要如何演进（例如从内存状态迁移到 Redis 或 Memcached 这样的分布式缓存）。"
+      },
+      "answer": ""
+    }
+  ]
+}
